@@ -545,3 +545,15 @@ button:focus-visible {
   font-size: 13px;
   color: #94A3B8;
 }
+.flex {
+      display: flex;
+    }
+.gauche {
+      width: 65%;
+      padding: 20px;
+    }
+
+    .droite {
+      width: 90%;
+      padding: 20px;
+    }
