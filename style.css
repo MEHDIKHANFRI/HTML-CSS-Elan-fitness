@@ -41,6 +41,10 @@ button:focus-visible {
   outline-offset: 2px;
 }
 
+svg{
+  height: 20px;
+}
+
 .conteneur {
   width: 100%;
   max-width: 1200px;
@@ -550,10 +554,35 @@ button:focus-visible {
     }
 .gauche {
       width: 65%;
-      padding: 20px;
+      padding-top: 80px;
     }
 
     .droite {
       width: 90%;
       padding: 20px;
+      padding-left: 50px;
     }
+    .formuleM{
+      background-color:#FFFFFF ;
+      border-radius : 80px ;
+      width: 100%;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .formuleM label{
+      border-radius: 50px;
+      font-weight: bold;
+      padding: 5px;
+
+    }
+    .formuleM input{
+      padding: 5px;
+    }
+    .formuleM #msg {
+      height: 100px;
+      padding: 5px;
+    
+    }
+    
