@@ -570,7 +570,6 @@ svg{
       display: flex;
       flex-direction: column;
       
-      
     }
     .formuleM label{
       border-radius: 50px;
@@ -598,4 +597,8 @@ svg{
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+.logo img {
+    width: 150px;
+    height: 100px;
 }
