@@ -184,14 +184,7 @@ svg{
   color: #0F1B2D;
 }
 
-.logo::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  margin-left: 8px;
-  background-color: #FF6B2C;
-  border-radius: 50%;
-}
+
 
 .menu {
   display: flex;
@@ -572,7 +565,7 @@ svg{
       
     }
     .formuleM label{
-      border-radius: 50px;
+      border-radius: 60px;
       font-weight: bold;
       padding: 5px;
       margin-bottom: 10px;
@@ -602,3 +595,276 @@ svg{
     width: 150px;
     height: 100px;
 }
+
+
+@media (max-width: 768px) {
+
+  .conteneur {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  
+  .en-tete-contenu {
+    height: auto;
+    min-height: 70px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo img {
+    width: 100px;
+    height: auto;
+  }
+
+  .menu {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+  
+
+  
+  .hero {
+    padding: 45px 0 60px;
+  }
+
+  .hero-contenu {
+    flex-direction: column;
+  }
+
+  .hero-texte {
+    width: 100%;
+  }
+
+  .hero-texte h1 {
+    font-size: 34px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  
+  .boutons {
+    flex-direction: column;
+  }
+
+  .bouton {
+    width: 100%;
+  }
+  .bouton {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  
+  .chiffres {
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .chiffre + .chiffre {
+    border-left: none;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 20px;
+  }
+
+  
+  .cartes {
+    flex-direction: column;
+  }
+
+  
+  .apropos-contenu {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .apropos-texte {
+    width: 100%;
+  }
+
+  .apropos-texte h2 {
+    font-size: 30px;
+  }
+
+  .apropos-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  .valeurs {
+    flex-direction: column;
+  }
+
+  
+  .carte-programme > img {
+    height: 180px;
+  }
+
+  
+  .formules {
+    margin-top: 60px;
+  }
+
+  .formule {
+    padding: 25px;
+  }
+
+ 
+  .flex {
+    flex-direction: column;
+  }
+
+  .gauche,
+  .droite {
+    width: 100%;
+  }
+
+  .gauche {
+    padding-top: 20px;
+  }
+
+  .droite {
+    padding: 20px 0;
+  }
+  .droite {
+    width: 100%;
+  }
+
+  .gauche {
+    padding-top: 20px;
+  }
+
+  .droite {
+    padding: 20px 0;
+  }
+
+  .formuleM {
+    width: 100%;
+    padding: 25px;
+    border-radius: 30px;
+  }
+
+  .ligne {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ligne > div {
+    width: 100%;
+  }
+  .formuleM label{
+      
+      padding: 0px;
+      
+    }
+
+  
+  .formuleM #msg {
+    width: 100%;
+  }
+
+  
+  .pied-haut {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .menu-pied {
+    flex-wrap: wrap;
+  }
+
+  .pied-bas {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .conteneur {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+  
+  .menu {
+    gap: 20px;
+  }
+
+  
+  .hero-contenu {
+    gap: 25px;
+  }
+
+  .hero-texte h1 {
+    font-size: 40px;
+  }
+
+  .hero-image {
+    height: 350px;
+  }
+
+  
+  .apropos-contenu {
+    gap: 35px;
+  }
+
+  .apropos-texte h2 {
+    font-size: 30px;
+  }
+
+  .apropos-image {
+    height: 320px;
+  }
+
+  
+  .cartes {
+    gap: 16px;
+  }
+
+  
+  .gauche {
+    width: 50%;
+  }
+
+  .droite {
+    width: 50%;
+    padding-left: 30px;
+  }
+
+  .formuleM {
+    padding: 35px;
+    border-radius: 40px;
+  }
+
+  .ligne {
+    gap: 15px;
+  }
+}
+
