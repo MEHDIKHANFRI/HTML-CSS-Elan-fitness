@@ -543,58 +543,75 @@ svg{
   color: #94A3B8;
 }
 .flex {
-      display: flex;
-    }
-.gauche {
-      width: 65%;
-      padding-top: 80px;
-    }
-
-    .droite {
-      width: 90%;
-      padding: 20px;
-      padding-left: 50px;
-    }
-    .formuleM{
-      background-color:#FFFFFF ;
-      border-radius : 80px ;
-      width: 100%;
-      padding: 50px;
-      display: flex;
-      flex-direction: column;
-      
-    }
-    .formuleM label{
-      border-radius: 60px;
-      font-weight: bold;
-      padding: 5px;
-      margin-bottom: 10px;
-
-    }
-    .formuleM input{
-      padding: 5px;
-      margin-bottom:10px ;
-    }
-    .formuleM #msg {
-      height: 100px;
-      padding: 5px;
-      margin-bottom:10px ;
-    
-    }
-    .ligne {
-    display: flex;
-    gap: 20px;
+  display: flex;
 }
 
-  .ligne > div {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+.gauche {
+  width: 40%;
+  padding-top: 20px;
+}
+
+.droite {
+  width: 60%;
+  padding: 20px 0 20px 16px;
+}
+
+.formuleM {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px;
+  background-color: #FFFFFF;
+  border-radius: 80px;
+}
+
+.formuleM label {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 60px;
+  font-weight: bold;
+}
+
+.formuleM input {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.formuleM #msg {
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.ligne {
+  display: flex;
+  gap: 20px;
+}
+
+.ligne > div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.formuleM input,
+.formuleM textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CBD5E1;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.formuleM textarea {
+  min-height: 120px;
+  resize: vertical;
 }
 .logo img {
-    width: 150px;
-    height: 100px;
+  width: 150px;
+  height: 100px;
 }
+
 .bouton:hover {
   transform: scale(1.1);
 }
@@ -604,165 +621,156 @@ svg{
 
 
 
-@media (max-width: 768px) {
+/* Tablettes : les éléments prennent plus de place et peuvent passer à la ligne. */
+@media (max-width: 900px) {
+  .conteneur {
+    padding: 0 20px;
+  }
 
+  .section {
+    padding: 64px 0;
+  }
+
+  .menu {
+    gap: 16px;
+  }
+
+  .hero-texte h1 {
+    font-size: 38px;
+  }
+
+  .hero-image {
+    height: 320px;
+  }
+
+  .cartes {
+    flex-wrap: wrap;
+  }
+
+  .carte-programme {
+    flex: 1 1 calc(50% - 12px);
+  }
+
+  .apropos-contenu {
+    gap: 32px;
+  }
+
+  .valeurs {
+    flex-wrap: wrap;
+  }
+
+  .valeur {
+    flex: 1 1 200px;
+  }
+
+  .gauche {
+    width: 40%;
+    padding-top: 20px;
+  }
+
+  .droite {
+    width: 60%;
+    padding: 20px 0 20px 16px;
+  }
+}
+
+/* Téléphones : les colonnes deviennent une seule colonne. */
+@media (max-width: 600px) {
   .conteneur {
     padding: 0 16px;
   }
 
   .section {
-    padding: 60px 0;
+    padding: 48px 0;
   }
 
-  
   .en-tete-contenu {
     height: auto;
-    min-height: 70px;
     flex-direction: column;
-    gap: 15px;
-    padding: 15px 0;
-  }
-
-  .logo {
-    font-size: 20px;
+    gap: 12px;
+    padding: 12px 0;
   }
 
   .logo img {
-    width: 100px;
+    width: 110px;
     height: auto;
   }
 
   .menu {
-    width: 100%;
     justify-content: center;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 8px 14px;
   }
 
   .menu a {
     font-size: 14px;
   }
-  
 
-  
   .hero {
-    padding: 45px 0 60px;
+    padding: 40px 0 48px;
   }
 
-  .hero-contenu {
+  .hero-contenu,
+  .apropos-contenu {
     flex-direction: column;
-  }
-
-  .hero-texte {
-    width: 100%;
+    gap: 24px;
   }
 
   .hero-texte h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .hero-description {
     font-size: 16px;
   }
 
-  .hero-image {
-    width: 100%;
-    height: 280px;
-  }
-
-  
-  .boutons {
-    flex-direction: column;
-  }
-
-  .bouton {
-    width: 100%;
-  }
-  .bouton {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 15px;
-  }
-
-  
-  .chiffres {
-    flex-direction: column;
-    gap: 20px;
-    padding: 25px;
-  }
-
-  .chiffre + .chiffre {
-    border-left: none;
-    border-top: 1px solid #E5E7EB;
-    padding-top: 20px;
-  }
-
-  
-  .cartes {
-    flex-direction: column;
-  }
-
-  
-  .apropos-contenu {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .apropos-texte {
-    width: 100%;
-  }
-
-  .apropos-texte h2 {
-    font-size: 30px;
-  }
-
+  .hero-image,
   .apropos-image {
     width: 100%;
-    height: 280px;
+    height: 250px;
   }
 
+  .boutons,
+  .cartes,
   .valeurs {
     flex-direction: column;
   }
 
-  
-  .carte-programme > img {
-    height: 180px;
+  .bouton {
+    width: 100%;
   }
 
-  
-  .formules {
-    margin-top: 60px;
-    
+  .chiffres {
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
   }
 
-  .formule {
-    padding: 25px;
+  .chiffre + .chiffre {
+    border: 0;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 16px;
   }
 
- 
+  .carte-programme {
+    width: 100%;
+  }
+
   .flex {
     flex-direction: column;
+    gap: 20px;
   }
 
-  
-  
-  
+  .gauche,
   .droite {
     width: 100%;
-    margin: auto;
+    padding: 0;
   }
-
-  .gauche {
-    margin: auto;
-    padding-top: 20px;
-  }
-
 
   .formuleM {
     width: 100%;
-    padding: 25px;
-    border-radius: 30px;
+    padding: 20px;
+    border-radius: 16px;
   }
 
   .ligne {
@@ -773,101 +781,19 @@ svg{
   .ligne > div {
     width: 100%;
   }
-  .formuleM label{
-      
-      padding: 0px;
-      
-    }
 
-  
-  .formuleM #msg {
+  .formuleM input,
+  .formuleM textarea {
     width: 100%;
   }
 
-  
-  .pied-haut {
+  .pied-haut,
+  .pied-bas {
     flex-direction: column;
-    gap: 25px;
+    gap: 18px;
   }
 
   .menu-pied {
-    flex-wrap: wrap;
-  }
-
-  .pied-bas {
-    flex-direction: column;
-    gap: 10px;
+    justify-content: flex-start;
   }
 }
-
-
-
-
-
-
-@media (max-width: 992px) {
-
-  .conteneur {
-    padding: 0 20px;
-  }
-
-  .section {
-    padding: 70px 0;
-  }
-
-  
-  .menu {
-    gap: 20px;
-  }
-
-  
-  .hero-contenu {
-    gap: 25px;
-  }
-
-  .hero-texte h1 {
-    font-size: 40px;
-  }
-
-  .hero-image {
-    height: 350px;
-  }
-
-  
-  .apropos-contenu {
-    gap: 35px;
-  }
-
-  .apropos-texte h2 {
-    font-size: 30px;
-  }
-
-  .apropos-image {
-    height: 320px;
-  }
-
-  
-  .cartes {
-    gap: 16px;
-  }
-
-  
-  .gauche {
-    width: 50%;
-  }
-
-  .droite {
-    width: 50%;
-    padding-left: 30px;
-  }
-
-  .formuleM {
-    padding: 35px;
-    border-radius: 40px;
-  }
-
-  .ligne {
-    gap: 15px;
-  }
-}
-
