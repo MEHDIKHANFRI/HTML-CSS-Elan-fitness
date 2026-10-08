@@ -621,7 +621,7 @@ svg{
 
 
 
-/* Tablettes : les éléments prennent plus de place et peuvent passer à la ligne. */
+
 @media (max-width: 900px) {
   .conteneur {
     padding: 0 20px;
@@ -674,7 +674,7 @@ svg{
   }
 }
 
-/* Téléphones : les colonnes deviennent une seule colonne. */
+
 @media (max-width: 600px) {
   .conteneur {
     padding: 0 16px;
@@ -746,7 +746,7 @@ svg{
     padding: 20px;
   }
 
-  .chiffre + .chiffre {
+  .chiffre  {
     border: 0;
     border-top: 1px solid #E5E7EB;
     padding-top: 16px;
