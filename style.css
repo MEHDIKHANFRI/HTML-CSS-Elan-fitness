@@ -91,7 +91,7 @@ svg{
   margin-bottom: 12px;
 }
 
-.bouton {
+.bouton  {
   display: inline-block;
   padding: 14px 28px;
   border-radius: 8px;
@@ -595,6 +595,13 @@ svg{
     width: 150px;
     height: 100px;
 }
+.bouton:hover {
+  transform: scale(1.1);
+}
+
+
+
+
 
 
 @media (max-width: 768px) {
@@ -726,6 +733,7 @@ svg{
   
   .formules {
     margin-top: 60px;
+    
   }
 
   .formule {
@@ -737,29 +745,19 @@ svg{
     flex-direction: column;
   }
 
-  .gauche,
+  
+  
+  
   .droite {
     width: 100%;
+    margin: auto;
   }
 
   .gauche {
+    margin: auto;
     padding-top: 20px;
   }
 
-  .droite {
-    padding: 20px 0;
-  }
-  .droite {
-    width: 100%;
-  }
-
-  .gauche {
-    padding-top: 20px;
-  }
-
-  .droite {
-    padding: 20px 0;
-  }
 
   .formuleM {
     width: 100%;
@@ -801,6 +799,11 @@ svg{
     gap: 10px;
   }
 }
+
+
+
+
+
 
 @media (max-width: 992px) {
 
