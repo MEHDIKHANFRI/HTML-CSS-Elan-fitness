@@ -623,67 +623,10 @@ svg{
   width: 100%;
   border: 1px solid #CBD5E1;
   border-radius: 6px;
+  
 
 }
 
-
-
-
-
-
-
-
-@media (max-width: 900px) {
-  .conteneur {
-    padding: 0 20px;
-  }
-
-  .section {
-    padding: 64px 0;
-  }
-
-  .menu {
-    gap: 16px;
-  }
-
-  .hero-texte h1 {
-    font-size: 38px;
-  }
-
-  .hero-image {
-    height: 320px;
-  }
-
-  .cartes {
-    flex-wrap: wrap;
-  }
-
-  .carte-programme {
-    flex: 1 1 calc(50% - 12px);
-  }
-
-  .apropos-contenu {
-    gap: 32px;
-  }
-
-  .valeurs {
-    flex-wrap: wrap;
-  }
-
-  .valeur {
-    flex: 1 1 200px;
-  }
-
-  .gauche {
-    width: 40%;
-    padding-top: 20px;
-  }
-
-  .droite {
-    width: 60%;
-    padding: 20px 0 20px 16px;
-  }
-}
 
 
 @media (max-width: 600px) {
@@ -807,6 +750,19 @@ svg{
   }
 
   .menu-pied {
-    justify-content: flex-start;
+    flex-direction: column;
   }
+
+  .gauche {
+    width: 100%;
+  }
+  .cartes {
+    flex-wrap: wrap;
+  }
+
+  .carte-programme {
+    flex: 1 1 calc(50% - 12px);
+  }
+  
+  
 }
