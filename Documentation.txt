@@ -1,0 +1,194 @@
+ — HTML:
+
+- Définition et rôle du HTML: 
+		HTML est un langage qui permet de structurer le contenu d’une page web.
+
+- Structure de base d'une page: 
+		Elle contient les éléments essentiels pour organiser un document HTML.
+
+- Balises sémantiques :
+		 header, nav, main, section, footer permettent d’organiser le contenu selon son rôle.
+
+- Formulaires, liens et images:
+		 Ils permettent de saisir des informations, de naviguer entre les pages et d’afficher des images.
+
+EXEMPLE :
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Élan Fitness</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue chez Élan Fitness</h1>
+    </header>
+
+    <main>
+        <p>Découvrez nos programmes sportifs.</p>
+        <img src="gym.jpg" alt="Salle de sport">
+        <a href="contact.html">Nous contacter</a>
+    </main>
+</body>
+</html>
+
+	-------------------------------------------------------------------
+
+ — CSS:
+
+- Définition et rôle du CSS : 
+		CSS permet de personnaliser l’apparence et la mise en page d’un site web.
+
+- Sélecteurs et propriétés.
+		Les sélecteurs ciblent les éléments HTML et les propriétés définissent leur style
+
+- Couleurs, marges, padding et bordures:
+		Ils permettent de personnaliser les couleurs, les espacements et les contours des éléments.
+
+- Organisation du code CSS:
+		Elle permet de garder un code clair, structuré et facile à modifier.
+
+EXEMPLE :
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #e63946;
+    text-align: center;
+}
+
+p {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+
+.NOM-CLASSE {
+    padding: 20px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+}
+
+	-------------------------------------------------------------------
+
+ — Flexbox:
+
+- display: flex : 
+		Permet d’organiser les éléments dans un conteneur flexible.
+
+- flex-direction : 
+		Définit la direction des éléments, en ligne ou en colonne.
+
+- justify-content : 
+		Permet d’aligner et de répartir les éléments sur l’axe principal.
+
+- flex-wrap :
+		Permet aux éléments de passer à la ligne si nécessaire.
+
+- gap :
+		Définit l’espace entre les éléments.
+
+EXEMPLE: 
+
+.programmes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+	-------------------------------------------------------------------
+
+
+ — Responsive Design:
+
+- Définition du responsive : 
+		Permet au site de s’adapter aux différentes tailles d’écran.
+
+- Meta viewport : 
+		Permet d’adapter la largeur de la page à celle de l’écran de l’appareil.
+
+- Media queries avec @media :
+		 Permettent de modifier le CSS selon la taille de l’écran.
+
+- Breakpoints (900px et 600px) : 
+		Définissent les largeurs à partir desquelles le design change.
+
+
+- Adaptation aux ordinateurs et téléphones : 
+		Permet d’assurer une navigation confortable sur tous les appareils.
+
+EXEMPLE : 
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+	-------------------------------------------------------------------
+
+ — Animations CSS:
+
+- transform:
+	Permet de déplacer, tourner ou redimensionner un élément.
+
+hover :
+	Permet de modifier l’apparence d’un élément lorsque la souris passe dessus.
+
+EXEMPLE:
+
+.Nom-CLASSE:hover {
+    transform: scale(1.05);
+}
+
+
+	-------------------------------------------------------------------
+
+ — SEO:
+
+- Définition du référencement naturel : 
+		Le SEO consiste à améliorer la visibilité d’un site dans les résultats des moteurs de recherche.
+
+
+- Balise title et meta description : 
+		Elles définissent le titre de la page et une courte description de son contenu.
+
+- Titres hiérarchisés (h1, h2, h3) : 
+		Permettent d’organiser le contenu selon différents niveaux de titres.
+
+- Texte alternatif des images avec alt : 
+		Décrit les images pour améliorer l’accessibilité et aider les moteurs de recherche à les comprendre.
+
+- URLs claires : 
+		Facilitent la compréhension des liens par les utilisateurs et les moteurs de recherche.
+
+- Contenu pertinent :
+		 Fournit des informations utiles et adaptées aux besoins des visiteurs.
+
+- Performances : 
+		Améliorent la vitesse de chargement et l’expérience utilisateur.
+
+EXEMPLE:
+
+<head>
+    <title>Élan Fitness - Salle de sport</title>
+
+    <meta name="description"
+          content="Découvrez les programmes de sport
+          et les cours proposés par Élan Fitness.">
+</head>
+
+<body>
+    <h1>Bienvenue chez Élan Fitness</h1>
+
+    <h2>Nos programmes sportifs</h2>
+
+    <img src="musculation.jpg"
+         alt="Entraînement de musculation en salle">
+</body>
+
+
